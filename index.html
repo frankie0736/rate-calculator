@@ -42,7 +42,13 @@
                             <!-- 固定月供输入框 -->
                             <div class="mb-3" id="fixedPaymentInput">
                                 <label for="monthlyPayment" class="form-label">月供金额（元）</label>
-                                <input type="number" class="form-control" id="monthlyPayment">
+                                <input type="number" 
+                                       class="form-control" 
+                                       id="monthlyPayment" 
+                                       step="0.01" 
+                                       min="0" 
+                                       pattern="\d+(\.\d{0,2})?"
+                                       placeholder="请输入月供金额，最多2位小数">
                             </div>
                             
                             <!-- 递减还款输入框 -->
